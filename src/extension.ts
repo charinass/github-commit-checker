@@ -13,10 +13,10 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('gitc.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from git-commit-checker!');
+	// Look for this line and update it:
+	let disposable = vscode.commands.registerCommand('format-guard.checkCode', () => {
+		// Your code here
+		vscode.window.showInformationMessage('Format Guard is working!');
 	});
 
 	context.subscriptions.push(disposable);

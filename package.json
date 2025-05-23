@@ -1,7 +1,7 @@
 {
-  "name": "gitc",
-  "displayName": "git-commit-checker",
-  "description": "Checks your commits before pushing to origin.",
+  "name": "format-guard",
+  "displayName": "Format Guard",
+  "description": "Pre-commit code formatting and comment checking tool.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.100.0"
@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "gitc.helloWorld",
-        "title": "Hello World"
+        "command": "format-guard.checkCode",
+        "title": "Format Guard: Check Code"
       }
     ]
   },
